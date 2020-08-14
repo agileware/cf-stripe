@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Caldera Forms Stripe\n"
+"POT-Creation-Date: 2015-01-29 09:31+0200\n"
+"PO-Revision-Date: 2015-01-29 09:31+0200\n"
+"Last-Translator: David Cramer <david@digilab.co.za>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../cf-stripe.php:35
+msgid "Stripe"
+msgstr ""
+
+#: ../cf-stripe.php:36
+msgid "Payment Processor"
+msgstr ""
+
+#: ../cf-stripe.php:68
+msgid ""
+"No Stripe token found, please wait for the page to load fully and try again."
+msgstr ""
+
+#: ../cf-stripe.php:180
+msgid "No amount set"
+msgstr ""
+
+#: ../config.php:2
+msgid "Secret Key"
+msgstr ""
+
+#: ../config.php:9
+msgid "Publishable Key"
+msgstr ""
+
+#: ../config.php:16
+msgid "Amount"
+msgstr ""
+
+#: ../config.php:22
+msgid "Currency"
+msgstr ""
+
+#: ../config.php:25
+msgid "See supported currencies"
+msgstr ""
+
+#: ../config.php:38
+msgid "Pay Label"
+msgstr ""
+
+#: ../config.php:45
+msgid "Item Name"
+msgstr ""
+
+#: ../config.php:52
+msgid "Description"
+msgstr ""
+
+#: ../config.php:60
+msgid "Email Field"
+msgstr ""

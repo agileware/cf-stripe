@@ -1,0 +1,19 @@
+{
+  "name" : "calderawp/cf-stripes",
+  "description" : "Stripe payment gateway for Caldera Forms.",
+  "type" : "wordpress-plugin",
+  "keywords" : [ "wordpress", "stripe", "caldera" ],
+  "license" : "GPL-2.0+",
+  "authors" : [
+    {
+      "name"    : "David Cramer",
+      "homepage": "http://cramer.co.za",
+      "role" : "Lead Developer"
+    }
+  ],
+  "require": {
+    "stripe/stripe-php": "4.*",
+    "calderawp/dismissible-notice": "dev-master",
+    "calderawp/licensing-helper" : "dev-master"
+  }
+}

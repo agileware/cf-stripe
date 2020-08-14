@@ -1,0 +1,49 @@
+=== Caldera Forms Stripe ===
+Contributors: Desertsnowman, Shelob9,
+Donate link: http://calderawp.com
+Tags: forms, payment gateways Stripe
+Requires at least: 4.0
+Tested up to: 4.9.5
+Stable tag: 1.4.7
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Stripe payment gateway integration for Caldera Forms.
+
+== Description ==
+
+Easily accept credit cards on your WordPress site using Stripe's simple, inline interface.
+
+== Installation ==
+
+1. From the WordPress plugin installer, select "upload" and then upload this plugin.
+1. Activate the plugin through the 'Plugins' menu in WordPress
+
+== Changelog ==
+= 1.2.1 =
+* First CalderaWP Release.
+
+= 1.3.0 =
+* ADDED: support for creating reoccurring payment plans.
+
+= 1.3.1 =
+* FIXED: Issue with single payments not setting email for invoices.
+* ADDED: New filter "cf_stripe_recurring_args"
+* ADDED: New filter "cf_stripe_charge_args"
+
+= 1.3.2 =
+* ADDED: New action "cf_stripe_post_successful_charge"
+* ADDED: New action "cf_stripe_post_payment"
+* ADDED: New action "cf_stripe_post_plan_create"
+
+= 1.3.3 =
+* Updated to new version of the Stripe PHP API
+* FIXED: issue with multiple forms on a page
+
+= 1.4.0 =
+* FIXED: Issue with field verification not running in Safari.
+* ADDED: Bitcoin support.
+* ADDED: Additional verification options.
+
+= 1.4.7 =
+* Improvement: Moved generated script in the footer insted of printing it in the content
