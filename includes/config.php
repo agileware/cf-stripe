@@ -59,38 +59,6 @@ if( class_exists( 'Caldera_Forms_Processor_UI' ) ){
 	</div>
 </div>
 
-<div class="caldera-config-group">
-	<label for="stripe_bitcoin">
-		<?php _e('Allow Bitcoin', 'cf-stripe'); ?>
-	</label>
-	<div class="caldera-config-field">
-		<input type="checkbox" class="field-config" id="stripe_bitcoin" name="{{_name}}[bitcoin]" {{#if bitcoin}}checked{{/if}}>
-	</div>
-</div>
-
-<div class="caldera-config-group">
-	<label><?php _e('Pay Label', 'cf-stripe'); ?></label>
-	<div class="caldera-config-field">
-		<input type="text" class="block-input field-config" id="stripe_plan" name="{{_name}}[label]" value="{{#if label}}{{label}}{{else}}Pay{{/if}}">
-	</div>
-</div>
-
-<div class="caldera-config-group">
-	<label for="add_verification">
-		<?php _e('Additional Verification', 'cf-stripe'); ?>
-	</label>
-	<div class="caldera-config-field">
-		<select class="block-input field-config" id="stripe-add_verification" name="{{_name}}[add_verification]" value="{{add_verification}}">
-			<option value="none" {{#is add_verification value="none"}}selected{{/is}}><?php _e( 'None', 'cf-stripe' ); ?></option>
-			<option value="zipCode" {{#is add_verification value="zipCode"}}selected{{/is}}><?php _e( 'Zip Code', 'cf-stripe' ); ?></option>
-			<option value="address" {{#is add_verification value="address"}}selected{{/is}}><?php _e( 'Address', 'cf-stripe' ); ?></option>
-		</select>
-	</div>
-	<p class="description">
-		<?php _e( sprintf( 'Additional verification must be enabled at %1s', '<a href="https://dashboard.stripe.com/account/data" target="_blank" >https://dashboard.stripe.com/account/data</a>'), 'cf-stripe' ); ?>
-	</p>
-</div>
-
 
 <div class="caldera-config-group">
 	<label><?php _e( 'Image', 'cf-stripe'); ?> </label>
@@ -179,17 +147,6 @@ jQuery(document).on('click', '.{{_id}}_btn', function(){
 		{{{_field slug="email" type="email" exclude="system" required="true"}}}
 	</div>
 </div>
-
-<div class="caldera-config-group">
-	<label for="stripe_remove_remember">
-	<?php esc_html_e('Disable Remember', 'cf-stripe'); ?>
-	</label>
-	<div class="caldera-config-field">
-	<input type="checkbox" class="field-config" id="stripe_remove_remember" aria-describedby="stripe_remove_remember-desc" name="{{_name}}[remove_remember]" {{#if remove_remember}}checked{{/if}} >
-		<p id="stripe_remove_remember-desc"><?php esc_html_e( 'If checked, the "Remember Me?" option will be removed.', 'cf-stripe' ); ?></p>
-</div>
-</div>
-
 
 
 {{#script}}

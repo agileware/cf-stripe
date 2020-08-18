@@ -4,7 +4,7 @@ Donate link: http://calderawp.com
 Tags: forms, payment gateways Stripe
 Requires at least: 4.0
 Tested up to: 4.9.5
-Stable tag: 1.4.7
+Stable tag: 1.4.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,3 +47,18 @@ Easily accept credit cards on your WordPress site using Stripe's simple, inline 
 
 = 1.4.7 =
 * Improvement: Moved generated script in the footer insted of printing it in the content
+
+= 1.4.8 =
+* Switched to new Stripe checkout process to support SCA regulation ( https://stripe.com/docs/payments/checkout/server )
+* Deprecated Stripe unused bicoin options
+* Edited the Actions and filters arguments ( https://calderaforms.com/doc/stripe-getting-started/ )
+
+= 1.4.9 =
+* Fixes the processor conditions
+* Fixes the required Name, Description and Image settings in the processor ( Settings not required )
+* Improve errors returned after Stripe checkout
+* Removed a nested build folder issue
+
+= 1.4.10 =
+* Fix interference with other forms in the page.
+* Fix failing submissions for forms using multiple choices select fields.
