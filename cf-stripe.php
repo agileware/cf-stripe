@@ -65,8 +65,10 @@ include CF_STRIPE_PATH . 'includes/functions.php';
 /**
  * Software Licensing
  */
+
 // filter to initialize the license system
-add_action('admin_init', 'cf_stripe_init_license');
+// add_action('admin_init', 'cf_stripe_init_license');
+
 /**
  * Initializes the licensing system
  *
