@@ -11,7 +11,7 @@
  * Plugin Name: Caldera Forms Stripe
  * Plugin URI:  
  * Description: Stripe Payments with Caldera Forms
- * Version: 1.4.11
+ * Version: 1.4.11-Agileware-1
  * Author:      Caldera Labs
  * Author URI:  https://calderaforms.com
  * Text Domain: cf-stripe
@@ -29,7 +29,7 @@ if (!defined('WPINC')) {
 define('CF_STRIPE_PATH',  plugin_dir_path(__FILE__));
 define('CF_STRIPE_CORE',  __FILE__);
 define('CF_STRIPE_URL',  plugin_dir_url(__FILE__));
-define( 'CF_STRIPE_VER', '1.4.11' );
+define( 'CF_STRIPE_VER', '1.4.11-Agileware-1' );
 
 
 // add language text domain
