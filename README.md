@@ -4,10 +4,10 @@ Stripe payment gateway integration for Caldera Forms. Easily accept credit cards
 
 This is the Agileware fork of the Caldera Forms Stripe by Caldera Forms, https://calderaforms.com
 
-Original Authors: Desertsnowman, Shelob9
-Forked version: 1.4.11
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Original Authors: Desertsnowman, Shelob9
+* Forked version: 1.4.11
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ## Installation
 
