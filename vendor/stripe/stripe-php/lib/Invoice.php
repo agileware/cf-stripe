@@ -32,11 +32,11 @@ namespace Stripe;
  * amount due for the invoice is less than Stripe's <a
  * href="/docs/currencies#minimum-and-maximum-charge-amounts">minimum allowed
  * charge per currency</a>, the invoice is automatically marked paid, and we add
- * the amount due to the customer's running account balance which is applied to the
- * next invoice.
+ * the amount due to the customer's credit balance which is applied to the next
+ * invoice.
  *
- * More details on the customer's account balance are <a
- * href="https://stripe.com/docs/api/customers/object#customer_object-account_balance">here</a>.
+ * More details on the customer's credit balance are <a
+ * href="https://stripe.com/docs/billing/customer/balance">here</a>.
  *
  * Related guide: <a href="https://stripe.com/docs/billing/invoices/sending">Send
  * Invoices to Customers</a>.
@@ -86,6 +86,7 @@ namespace Stripe;
  * @property null|string $number A unique, identifying string that appears on emails sent to the customer for this invoice. This starts with the customer's unique invoice_prefix if it is specified.
  * @property bool $paid Whether payment was successfully collected for this invoice. An invoice can be paid (most commonly) with a charge or with credit from the customer's account balance.
  * @property null|string|\Stripe\PaymentIntent $payment_intent The PaymentIntent associated with this invoice. The PaymentIntent is generated when the invoice is finalized, and can then be used to pay the invoice. Note that voiding an invoice will cancel the PaymentIntent.
+ * @property \Stripe\StripeObject $payment_settings
  * @property int $period_end End of the usage period during which invoice items were added to this invoice.
  * @property int $period_start Start of the usage period during which invoice items were added to this invoice.
  * @property int $post_payment_credit_notes_amount Total amount of all post-payment credit notes issued for this invoice.
